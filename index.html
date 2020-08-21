@@ -5,41 +5,48 @@
   <link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">   
   <link rel="shortcut icon" type="image/x-icon" href="logo.png" />
 
-
-
   <head>
-  <title>Hello Friend.</title>
+    <center><title>Hello Friend.</title>
 
-  <b><h1 class='glow' style="color:hotpink; text-shadow: -0.5px 3px 0px pink; margin-top: 250px; position: fixed;">Elliot Alderson</h1></b>
+  <b><h1 class='glow' style="color:hotpink; text-shadow: -0.5px 3px 0px pink; margin-top: 250px - 300px; position: fixed; left: 600px;">Elliot Alderson</h1></b>
 
-    <i><b><p style="color:skyblue; margin-top:250px; position: fixed;">Hello friend.</p></b></i>
+    <i><b><p style="color:skyblue; margin-top:250px-300px; position: fixed; left: 600px;">Hello friend.</p></b></i>
+    <div class="malware">
+      <h1></h1>
+    </div>
 
   </head>
 
   <body>
-      <p style='color:skyblue; margin-top: 300px; color: yellow; position: fixed;'>Website in development.</p>
+    <p style='margin-top: 540px; color: white; position: fixed; left: 600px;'>Website in development.</p></center>
       <div class='logos'>
 
         <div class='twitter'>
 
-          <a href="https://twitter.com/0x0elliot">
-            <i class="fa fa-twitter" style= "transform:scale(3); margin-top: 10px; color: skyblue;"></i>
-          </a>
+         <a href="https://twitter.com/0x0elliot">
+           <i class="fa fa-twitter" style= "margin-top: 10px; color: skyblue;"></i>
+         </a>
 
         </div>
         <div class='github'>
 
           <a href="https://github.com/0x0elliot">
-              <i class="fa fa-github" style="transform: scale(3); margin-top: 20px; color: yellow;"></i>
+              <i class="fa fa-github" style="margin-top: 20px; color: white;"></i>
           </a>
 
         </div>
         <div class='medium'>
           <a href='https://medium.com/@0x0elliot'>
-            <i class="fa fa-medium" style="transform: scale(3); margin-top: 30px; color: white;"></i>
+            <i class="fa fa-medium" style=" margin-top: 30px; color: yellow;"></i>
           </a>
         </div>
       </div>
+    <div class="about-text">
+      <h1 style="color: #fe09b0; text-shadow: -1px 3px 0px #3cfcf1; margin-top: 50px; font-size: 50px;">Hacker, OSINT Enthusiast, Coder<br> and a Stupid Teenager.</h1>
+    </div>
+    <div class="description">
+      <p style="color: skyblue; text-shadow: -1px 1px 0px red; margin-top: 30px; font-size: 20px;">Hi, I am Elliot.<br> I will be sharing my journey here at this blog here once it finishes.<br> I am still developing it.<br>I love making and breaking websites.<br> I love Malware. Making and reversing.<br> And I love OSINT.<br>And about this website..Well<br>I will be using it to host my stupid projects.</p>
+    </div>
   </body>
 
   <!--Ah I see. You have found me. I told you to let go with me else it won't work. Didn't I?-->
@@ -55,16 +62,19 @@
     -ms-user-select: none;
     user-select: none;
 }
+    h1:hover, p:hover{
+      transform:scale(1.01);
+    }
     body{
       background-image:url('bckgnd.png');
     }
-  .fa.fa-twitter:hover, .fa.fa-github:hover, .fa.fa-medium:hover{
-    transform: scale(3.5);
-  }
     <!--.glow{
       -webkit-animation: glow 1s ease-in-out infinite alternate;
       -moz-animation: glow 1s ease-in-out infinite alternate;
       animation: glow 1s ease-in-out infinite alternate;
     }-->
+    .fa.fa-twitter:hover, .fa.fa-github:hover, .fa.fa-medium:hover{
+      transform:scale(1.1);
+    }
   </style>
 </html>
